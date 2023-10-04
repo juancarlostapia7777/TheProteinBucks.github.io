@@ -1,0 +1,98 @@
+
+body{
+    background-image: url(./img/01fd4818-45be-44e5-b550-b870909a0a91.jpg);
+}
+
+div > img{
+    border-radius:  8px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 30px black;
+    transition: 3s;
+}
+img:hover{
+    transform: scale(0.9);
+}
+div{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(150px,1fr)
+    );
+    gap: 32px;
+}
+
+
+.imgdiv {
+	
+	margin: 15px auto ;
+    margin-top: 150px;
+	width: 190px; 
+	height: 180px;
+	background-image: url(./img/logos/Diseño\ sin\ título-modified.png);
+	background-size: cover;
+	animation-fill-mode: forwards;
+	animation-name: imagenanimacion;
+	
+	animation-duration: 2s;
+	animation-delay: 200ms;
+	
+
+  }
+  
+  @keyframes imagenanimacion {
+	
+
+	100%{
+		background-image: url(./img/logos/Frame\ 5.png);
+        margin-top: 0px;
+		width: 150px; 
+	    height: 150px;
+		
+	}
+		
+	
+	
+  }
+
+
+  .footer {
+	font-weight: 300;
+	text-align: center;
+	margin:10px 0;
+	z-index: 10;
+	font-size:11px;
+	position: absolute;
+	bottom:0;
+	width:100%;
+}
+
+.footer .link {
+	display: inline-block;
+	background: transparent;
+	color: #fff;
+	font: 1em 'Montserrat', 'Helvetica', Arial, sans-serif;
+	
+	vertical-align: text-top;
+	text-decoration: none;
+}
+
+@media (max-device-width: 680px){
+	
+	BODY {
+	 background-image: url('img/various-fit-fitness-gym.jpg');
+	 background-position:top center;
+	 background-repeat: no-repeat;
+	 background-attachment:fixed;
+	 background-size: auto 100%;
+
+  }
+  
+  .bg {
+    display: none;
+  }
+  
+  .footer {
+	  position:relative;
+  }
+}
